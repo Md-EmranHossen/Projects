@@ -7,12 +7,7 @@
 using namespace std;
 using namespace cv;
 
-/*void main() {
-	string path = "chando.jpg";
-	Mat	img = imread(path);
-	imshow("Frame", img);
-	waitKey(0);
-}*/
+
 
 void main() {
 	VideoCapture video(1);

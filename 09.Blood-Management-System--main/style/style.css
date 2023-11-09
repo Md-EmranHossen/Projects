@@ -1,0 +1,268 @@
+.container{
+    width: 100%;
+    height: auto;
+}
+.inner-container{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: rgba(255, 144, 14, 0.10);
+
+}
+.header{
+
+    margin-top: 80px;
+    width: 100%;
+    height: 50px;
+    background-color: #FF900E;
+    
+}
+.body{
+    width: 100%;
+    /* height: 550px; */
+}
+.footer{
+    width: auto;
+    height: 50px;
+    color: #fff;
+    background-color:#FF900E;
+}
+
+/*  inner */
+.header h2{
+    text-align: center;
+    padding: 8px;
+    font-size: 35px;
+    color: #fff;
+    
+}
+.body table{
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table .login-title b{
+    margin-right:20px;
+    font-size: 24px;
+    color: #131313;
+}
+.body table tr td input{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    background-color: #f1e6da;
+}
+
+table .button{
+     margin-top: 30px;
+   padding: 5px;
+   font-size: 25px;
+   font-weight: 600;
+   letter-spacing: 2.1px;
+   color: #fff;
+   background-color: #FF900E !important;
+   border: none;
+}
+   .button:hover{
+    background-color: #cb7008 !important;
+   }
+  
+.footer{
+    text-align: center;
+    /* padding: 8px; */
+    color: #fff;
+    font-size: 25px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer span{
+    color: #131313;
+}
+/* logout button */
+.footer a{
+    text-decoration: none;
+    color: rgb(9, 7, 0);
+    /* position: relative;
+    top: -50px;
+    right: -250px; */
+    font-size: 22px;
+    border: solid 1px #131313;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: peru;
+}
+.footer a:hover{
+    background-color: rgb(187, 7, 7);
+    color: #f1e6da;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* admin control */
+.admin-control ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+    margin-right: 50px;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+.admin-control ul li{
+    width: 100%;
+    height: 50px;
+    background-color: #673904ba;
+    text-align: center;
+    border-radius: 8px;
+    float: left;
+    padding-top: 15px;
+    /* color: #fff; */
+}
+.admin-control a{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+/* ***********************
+Donor regis
+******************* */
+.form{
+    width: 90%;
+    /* height: 420px; */
+    padding: 15px;
+    /* background: gray; */
+    background: rgba(255, 144, 14, 0.10);
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.form tr {
+    position: relative;
+    top: -30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* width: 90%; */
+    column-gap: 50px;
+}
+.form select{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: red;
+}
+.form textarea{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f1e6da;
+}
+.save-btn{
+    background-color: #cb7008 !important;
+    width: 150px;
+    height: 50px;
+}
+.form button{
+    width: 350px;
+    height: 50px;
+    align-items: center;
+    background-color: red;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 7.5;
+}
+
+
+/* responsive for mobile */
+@media screen and (max-width:612px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .inner-container{
+        width: 100%;
+    }
+    .header{
+        /* margin: 0; */
+        margin: 0;
+        height: auto;
+    }
+    .body{
+        height: 100%;
+    }
+    .header h2{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 22px;
+    }
+    table tr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    table .login-title b{
+        font-size: 16px;
+    }
+    .body table tr td input{
+        width: 300px;
+        height: 50px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    .footer div{
+        font-size: 15px;
+    }
+    .button-container{
+        display: flex;
+        justify-content: end;
+        }
+
+.admin-control ul li{         
+     width: 100%;
+     height: 25px;
+     gap: 0;
+     margin-left: 20px;
+     padding: 5px;
+     
+     }
+.admin-control ul{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 12px;
+    
+}
+.admin-control a{
+    font-size: 18px;
+    font-weight: 500;
+}
+.form{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.form tr{
+   
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 10px;
+}
+.form button{
+    margin-top: 15px;
+    left: 0;
+}
+}
